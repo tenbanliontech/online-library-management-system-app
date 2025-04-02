@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+        .book {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .book img {
+            max-width: 120px;
+            margin-right: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .book-details {
+            flex: 1;
+        }
+        .book-title {
+            color: #007BFF;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .book-author {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .book-description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .book-description:hover {
+            color: #007BFF;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Books Collection</h1>
+
+        <!-- Previous books -->
+        <!-- ... Existing books code ... -->
+
+        <!-- Additional books -->
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/richdad.jpeg') }}" alt="Rich Dad Poor Dad">
+            <div class="book-details">
+                <h2 class="book-title">Rich Dad Poor Dad</h2>
+                <p class="book-author">Author: Robert Kiyosaki</p>
+                <p class="book-description">A groundbreaking financial guide that challenges traditional views on work and money. In this book, Robert Kiyosaki draws on life lessons from two father figures to emphasize financial literacy, the importance of investing in assets, and creating true financial independence.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/think.jpeg') }}" alt="think_and_grow rich">
+            <div class="book-details">
+                <h2 class="book-title">Think and grow rich</h2>
+                <p class="book-author">Author: Napoleon Hill</p>
+                <p class="book-description">A timeless success guide that distills the wisdom of America's greatest achievers into 13 powerful principles.
+                    In this classic, Napoleon Hill challenges you to harness the power of desire, faith, and persistence,
+                    proving that whatever the mind can conceive and believe, it can achieve.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/pride.jpeg') }}" alt="Pride and Prejudice">
+            <div class="book-details">
+                <h2 class="book-title">Pride and Prejudice</h2>
+                <p class="book-author">Author: Jane Austen</p>
+                <p class="book-description">A timeless romance intertwined with satire on societal norms.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/Catcher.jpeg') }}" alt="The Catcher in the Rye">
+            <div class="book-details">
+                <h2 class="book-title">The Catcher in the Rye</h2>
+                <p class="book-author">Author: J.D. Salinger</p>
+                <p class="book-description">A candid reflection of teenage angst and rebellion.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/great.jpeg') }}" alt="The Great Gatsby">
+            <div class="book-details">
+                <h2 class="book-title">The Great Gatsby</h2>
+                <p class="book-author">Author: F. Scott Fitzgerald</p>
+                <p class="book-description">A tragic tale of ambition, love, and the American Dream.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/alchemist.jpeg') }}" alt="The Alchemist">
+            <div class="book-details">
+                <h2 class="book-title">The Alchemist</h2>
+                <p class="book-author">Author: Paulo Coelho</p>
+                <p class="book-description">An inspiring journey of self-discovery and pursuing one’s destiny.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/hobbit.jpeg') }}" alt="The Hobbit">
+            <div class="book-details">
+                <h2 class="book-title">The Hobbit</h2>
+                <p class="book-author">Author: J.R.R. Tolkien</p>
+                <p class="book-description">A thrilling fantasy adventure in Middle-earth.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/lordring.jpeg') }}" alt="The Lord of the Rings">
+            <div class="book-details">
+                <h2 class="book-title">The Lord of the Rings</h2>
+                <p class="book-author">Author: J.R.R. Tolkien</p>
+                <p class="book-description">An epic journey of courage and camaraderie to defeat evil.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/brave.jpeg') }}" alt="Brave New World">
+            <div class="book-details">
+                <h2 class="book-title">Brave New World</h2>
+                <p class="book-author">Author: Aldous Huxley</p>
+                <p class="book-description">A visionary novel on the dangers of technological control.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/potter.jpeg') }}" alt="Harry Potter and the Philosopher's Stone">
+            <div class="book-details">
+                <h2 class="book-title">Harry Potter and the Philosopher's Stone</h2>
+                <p class="book-author">Author: J.K. Rowling</p>
+                <p class="book-description">A magical beginning to the world’s most beloved wizarding saga.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/animal.jpeg') }}" alt="Animal Farm">
+            <div class="book-details">
+                <h2 class="book-title">Animal Farm</h2>
+                <p class="book-author">Author: George Orwell</p>
+                <p class="book-description">A political allegory of power and corruption with farm animals.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/tale.jpeg') }}" alt="A Tale of Two Cities">
+            <div class="book-details">
+                <h2 class="book-title">A Tale of Two Cities</h2>
+                <p class="book-author">Author: Charles Dickens</p>
+                <p class="book-description">A historical drama set against the backdrop of the French Revolution.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/memory.jpeg') }}" alt="Memoirs of a Geisha">
+            <div class="book-details">
+                <h2 class="book-title">Memoirs of a Geisha</h2>
+                <p class="book-author">Author: Arthur Golden</p>
+                <p class="book-description">An evocative tale of ambition and love in pre-war Japan.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/danbrown.jpeg') }}" alt="Da Vinci Code Book Cover">
+            <div class="book-details">
+                <h2 class="book-title">The Da Vinci Code</h2>
+                <p class="book-author">Author: Dan Brown</p>
+                <p class="book-description">A captivating thriller filled with secrets and conspiracy theories.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="{{ url_for('static', filename='images/lifeofpi.jpeg') }}" alt="Life of Pi Book Cover">
+            <div class="book-details">
+                <h2 class="book-title">Life of Pi</h2>
+                <p class="book-author">Author: Yann Martel</p>
+                <p class="book-description">A spiritual and physical journey of survival on the open sea.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
